@@ -217,4 +217,4 @@ Nginx routes external HTTPS traffic to the internal Gunicorn server running on p
 ### 🔗 Related Repository
 ---
 #### Frontend UI:
-👉 [Sreamlit RBAC frontend](https://github.com/Sridhar990/rbac-auth-streamlit-ui)
+👉 [Streamlit RBAC frontend](https://github.com/Sridhar990/rbac-auth-streamlit-ui)
