@@ -8,12 +8,13 @@ load_dotenv()
 
 DB_USER=os.getenv("DB_USER")
 DB_HOST=os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
 DB_DATABASE_NAME=os.getenv("DB_DATABASE_NAME")
 DB_PASSWORD=os.getenv("DB_PASSWORD")
 
 DB_PASSWORD=quote_plus(DB_PASSWORD)
 
-database_url=f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE_NAME}"
+database_url=f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE_NAME}"
 
 engine=create_engine(database_url,echo=True)
 

@@ -11,6 +11,7 @@ from app.utils.email import send_otp_to_email
 from fastapi.security import OAuth2PasswordRequestForm
 
 
+
 router=APIRouter(prefix="/auth",tags=["Auth"])
 
 @router.post("/register",status_code=status.HTTP_201_CREATED)
